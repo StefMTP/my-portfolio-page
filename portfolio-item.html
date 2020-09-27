@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- I am using the BEM methodology to name the classes, since it is useful for organizing css code, finding blocks more efficiently and altering without having to worry about messing up other elements-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Portfolio | Project</title>
+</head>
+<body>
+    <!-- Website Header -->
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="index.html" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="index.html#services" class="nav__link">Services</a>
+                </li>
+                <li class="nav__item">
+                    <a href="index.html#about" class="nav__link">About Me</a>
+                </li>
+                <li class="nav__item">
+                    <a href="index.html#work" class="nav__link">My Work</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introduction section! -->
+    <section id="home" class="intro">
+        <!-- Project number on the title and the image source added dynamically from url query-->
+        <h1 class="section__title section__title--intro">Portfolio project <strong>numero</strong></h1>
+        <p class="section__subtitle section__subtitle--intro">Project Subtitle!</p>
+        <img class="intro__img" alt="project pic">
+    </section>
+
+    <div class="portfolio-item-individual">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam laboriosam, excepturi ex repellat voluptatum dignissimos molestiae eos quod consequatur rerum!</p>
+        <img src="img/details.jpg" alt="oops">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ea dicta maxime vero porro alias modi rem possimus, cumque repellendus voluptatibus, nostrum blanditiis architecto. <strong>In voluptatum similique praesentium possimus accusamus?</strong></p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates harum numquam voluptate sapiente impedit, rerum corrupti reprehenderit eaque nobis iste? Fuga ipsa dolore qui eveniet minima ea deleniti repudiandae provident distinctio saepe, pariatur atque illo dolores laudantium quas incidunt in!</p>
+    </div>
+
+    <footer class="footer">
+        <a href="mailto:stefanosmichalas@gmail.com" class="footer__link">stefanosmichalas@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="facebook.com"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="github.com"><i class="fab fa-github"></i></a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="linkedin.com"><i class="fab fa-linkedin"></i></a>
+            </li>
+        </ul>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/item.js"></script>
+</body>
+</html>
