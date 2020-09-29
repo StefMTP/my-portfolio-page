@@ -15,9 +15,9 @@
     --fs-h3: 1.5rem;
     --fs-body: 1rem;
 
-    --color-light: #ffffff;
-    --color-dark: #303030;
-    --color-main: #6ea5e4;
+    --color-light: #fff;
+    --color-dark: #333;
+    --color-main: #f56827;
     --bs: 0.25em 0.25em .75em rgba(0, 0, 0, .25),
           0.125em 0.125em .25em rgba(0, 0, 0, .15);
 }
@@ -315,13 +315,11 @@ header {
 
 @media (min-width: 800px) {
     .services {
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
         max-width: 1000px;
         margin-left: auto;
         margin-right: auto;
-    }
-    .services + .service {
-        margin-left: 5em;
     }
 }
 
