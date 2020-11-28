@@ -1,7 +1,5 @@
-# net-dump
+# Portfolio Website
 
-Pseudo portfolio page made with very basic html/css/javascript
+Real Portfolio Page made with basic HTML/CSS/JavaScript
 
-Some elements were added semi-dynamically with DOM manipulation and url queries
-
-More to come in the future possibly
+Elements added dynamically with param queries and dom manipulation for my work samples
