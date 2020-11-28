@@ -36,8 +36,9 @@ const projects = [
       }
 ];
 
-const params = new URLSearchParams(window.location.search);
-const i = params.get("index") <= 5 ? params.get("index") : 1;
+let i = new URLSearchParams(window.location.search).get("index");
+if(!i || i > 5) i = 1;
+// const i = params.get("index") <= 5 ? params.get("index") : 1;
 document.querySelector(".intro__img").setAttribute("src", `img/portfolio-${i}.png`);
 document.querySelector(".section__title--intro").innerHTML += projects[i-1].title;
 document.querySelector(".section__subtitle--intro").innerHTML += projects[i-1].subtitle;
