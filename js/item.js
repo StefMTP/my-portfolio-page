@@ -15,7 +15,7 @@ const projects = [
       },
       {
         title: "My Own Portfolio Website",
-        subtitle: "Believe it or not, the website you are viewing right now is also part of my work!",
+        subtitle: "The website you are viewing is also part of my work!",
         description: "Portfolio website, presenting myself and my projects.",
         tools: "HTML, CSS and vanilla JavaScript",
         link: "index.html"
@@ -29,7 +29,7 @@ const projects = [
       },
       {
         title: "Knowledge Base Website",
-        subtitle: "Knowledge Base CRUD App with Login/Registration/Access Control",
+        subtitle: "Knowledge Base CRUD App with User System",
         description: "Simple knowledge base app, with login, registration and access control, flash messages, as well as creating, reading, updating and deleting articles. Interacts with the MongoDB Atlas to store and alter articles and users.",
         tools: "Node, Express, Pug, bcryptjs, Passport, connect-flash, express messages, session & validator, mongoose",
         link: "https://article-base.herokuapp.com/"
@@ -43,4 +43,4 @@ document.querySelector(".section__title--intro").innerHTML += projects[i-1].titl
 document.querySelector(".section__subtitle--intro").innerHTML += projects[i-1].subtitle;
 document.querySelector(".portfolio-item-individual__description").innerHTML += projects[i-1].description;
 document.querySelector(".portfolio-item-individual__tools").innerHTML += projects[i-1].tools;
-document.querySelector(".portfolio-item-individual__link").setAttribute("href", projects[i-1].link);
+document.querySelector(".portfolio-item-individual__link").firstElementChild.setAttribute("href", projects[i-1].link);
