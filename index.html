@@ -34,6 +34,9 @@
                 <li class="nav__item">
                     <a href="#work" class="nav__link">My Work</a>
                 </li>
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link">Contact</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -88,6 +91,23 @@
         <div class="portfolio">
             <!-- portfolio items inserted dynamically here with DOM manipulation -->
         </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="section__title section__title--contact">Contact me!</h2>
+        <p class="section__subtitle section__subtitle--contact">If you have any questions or offers, direct them to me using this form!</p>
+        <form class="contact__form" name="contact" action="POST" data-netlify="true">
+            <div class="contact__field">
+                <input class="contact__field--input" type="text" name="name" placeholder="Your Name..."/>
+            </div>
+            <div class="contact__field">
+                <input class="contact__field--input" type="email" name="email"  placeholder="Your Email..."/>
+            </div>
+            <div class="contact__field">
+                <textarea class="contact__field--input" name="message" placeholder="Your Message..."></textarea>
+            </div>
+              <button class="btn" type="submit">Send</button>
+          </form>
     </section>
 
     <footer class="footer">

@@ -67,6 +67,7 @@ section {
     color: var(--color-dark);
     text-decoration: none;
     cursor: pointer;
+    border: none;
     font-weight: var(--fw-thick);
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -404,6 +405,47 @@ header {
 .portfolio__item:focus .portfolio__img {
     transform: scale(1.25);
     opacity: .75;
+}
+
+/* Contact Form */
+
+.contact {
+    background: var(--color-main);
+    text-align: center;
+}
+
+.section__title--contact {
+    
+}
+
+.section__subtitle--contact {
+    font-weight: var(--fw-thick);
+    color: var(--color-light);
+    margin-bottom: 2rem;
+}
+
+.contact__form {
+    display: block;
+}
+
+.contact__field {
+    color: var(--color-dark);
+    font-weight: var(--fw-reg);
+    margin-bottom: 1rem;
+}
+
+.contact__field input, textarea {
+    width: 50vw;
+    border: none;
+}
+
+.contact__field textarea {
+    height: 10rem;
+}
+
+.contact__form button {
+    background-color: var(--color-dark);
+    color: var(--color-light);
 }
 
 /* Footer */
