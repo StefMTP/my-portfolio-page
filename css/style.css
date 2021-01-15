@@ -432,6 +432,7 @@ header {
     color: var(--color-dark);
     font-weight: var(--fw-reg);
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .contact__field input, textarea {
