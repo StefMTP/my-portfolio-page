@@ -444,6 +444,10 @@ header {
     height: 10rem;
 }
 
+.recaptcha {
+    display: inline-block;
+}
+
 .contact__form button {
     background-color: var(--color-dark);
     color: var(--color-light);
