@@ -11,7 +11,7 @@ const projects = [
         subtitle: "Yeah I know, can't get any more boring than that...",
         description: "Simple application for presenting, creating and deleting tasks in a list, my first result of studying the React library and putting my knowledge into practice.",
         tools: "Node with React and the JSONPlaceholder API for HTTP requests through the Axios client, custom CSS for styling",
-        link: "https://whitestrabbit-todo.herokuapp.com"
+        link: "https://todo-brah.netlify.app/"
       },
       {
         title: "My Own Portfolio Website",
@@ -33,11 +33,18 @@ const projects = [
         description: "Simple knowledge base app, with login, registration and access control, flash messages, as well as creating, reading, updating and deleting articles. Interacts with the MongoDB Atlas to store and alter articles and users.",
         tools: "Node, Express, Pug, bcryptjs, Passport, connect-flash, express messages, session & validator, mongoose",
         link: "https://article-base.herokuapp.com/"
+      },
+      {
+        title: "Threader Social Media Website",
+        subtitle: "A mini Facebook-like app, made with the Laravel framework",
+        description: "The app is made using the MVC pattern of PHP framework Laravel and features login, registration, access control and other authentication middleware provided. Users can create posts, like and unlike posts, delete their own posts and view their own dashboard and a user's activity on Threader.",
+        tools: "Laravel with all its utilities for routes, views, controllers, models, middleware, policies etc. with Tailwind CSS for styling",
+        link: "https://threader-app.herokuapp.com/"
       }
 ];
 
 let i = new URLSearchParams(window.location.search).get("index");
-if(!i || i > 5) i = 1;
+if(!i || i > 6) i = 1;
 // const i = params.get("index") <= 5 ? params.get("index") : 1;
 document.querySelector(".intro__img").setAttribute("src", `img/portfolio-${i}.png`);
 document.querySelector(".section__title--intro").innerHTML += projects[i-1].title;
