@@ -39,7 +39,7 @@ const projects = [
         subtitle: "A mini Facebook-like app, made with the Laravel framework",
         description: "The app is made using the MVC pattern of PHP framework Laravel and features login, registration, access control and other authentication middleware provided. Users can create posts, like and unlike posts, delete their own posts and view their own dashboard and a user's activity on Threader.",
         tools: "Laravel with all its utilities for routes, views, controllers, models, middleware, policies etc. with Tailwind CSS for styling",
-        link: "https://threader-app.herokuapp.com/"
+        link: "https://threader-app.herokuapp.com/posts"
       }
 ];
 
